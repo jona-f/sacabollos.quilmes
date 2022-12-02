@@ -1,0 +1,237 @@
+* {
+    margin: auto;
+    padding: 0%;
+}
+
+.titulos h2 {
+    font-size: 90px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulos p {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Hero image */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+
+/* footer formulario y mapa */
+
+
+.formYmapa {
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-top: 2px;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+/* Footer redes videos y contacto */
+.redes {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(245, 241, 242, 0.995);
+}
+
+.redes img {
+    width: 75px;
+    height: 75px;
+}
+
+.videos {
+    width: 200px;
+    height: 200px;
+}
+
+.redes p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+/* TIENDA CARDS */
+.card {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*Image*/
+.card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: linear-gradient(to top, #0a3394, #4286f4);
+}
+.cera {
+    background-image: url(./img/cera.jpg);
+}
+.panio1 {
+    background-image: url(./img/panio1.jpg);
+}
+.panio2 {
+    background-image: url(./img/panio2.png);
+}
+.sepillo {
+    background-image: url(./img/sepillo.png);
+}
+
+
+/*Description */
+.card-description {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 25%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.text-body {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+
+/* Hover states */
+
+.card:hover .card-description {
+    transform: translateY(100%);
+}
