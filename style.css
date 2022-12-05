@@ -3,6 +3,7 @@
     padding: 0%;
 }
 
+
 .titulos h2 {
     font-size: 90px;
     justify-content: center;
@@ -20,6 +21,12 @@
 .navbar-nav a {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+}
+.ver-carrito{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 /* Hero image */
@@ -173,65 +180,89 @@ button:active {
 }
 
 /* TIENDA CARDS */
+.shop-content {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 30px;
+margin-left: 80px;
+margin-right: 80px;
+}
+
 .card {
-    height: 500px;
-    width: 300px;
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border-radius: 1em;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: serif;
 }
 
-/*Image*/
-.card-image {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background: linear-gradient(to top, #0a3394, #4286f4);
-}
-.cera {
-    background-image: url(./img/cera.jpg);
-}
-.panio1 {
-    background-image: url(./img/panio1.jpg);
-}
-.panio2 {
-    background-image: url(./img/panio2.png);
-}
-.sepillo {
-    background-image: url(./img/sepillo.png);
+.card > img {
+    width: 90%;
+    height: 250px;
 }
 
+.price {
+    color: grey;
+    font-size: 22px;
+}
 
-/*Description */
-.card-description {
+/* modal container */
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: grey;
+    background-color: #121212;
     display: flex;
-    position: absolute;
-    gap: 1em;
     flex-direction: column;
-    background-color: #f5f5f5;
-    height: 25%;
-    bottom: 0;
-    border-radius: 1em 1em 0 0;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 1rem;
+    align-items: center;
+    /*for the top*/
+position: fixed;
+overflow: auto;
+z-index: 9;
+top: 12vh;
+scrollbar-color: none;
+}
+.modal-container ::-webkit-scrollbar {
+    display: none;
 }
 
-/*Text*/
-.text-title {
-    font-size: 1.4em;
-    font-weight: 700;
+.modal-header {
+display: flex;
+justify-content: space-around;
+background-color: #0a0909;
+color: #fff;
+width: 100%;
 }
 
-.text-body {
-    font-size: 1em;
-    line-height: 150%;
+.modal-header-title {
+    justify-self: start;
+}
+.modal-header-button {
+    cursor:pointer;
 }
 
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
 
-/* Hover states */
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
 
-.card:hover .card-description {
-    transform: translateY(100%);
+.total-content {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete-product {
+    cursor:pointer;
 }
