@@ -22,12 +22,35 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.instagram{
+    width: 35px;
+    height: 35px;
+    top: 15px;
+}
+
+/* Carrito Contador */
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 25px;
+    right: 8px;
+    position: absolute;
+    display: none;
+}
+
 .ver-carrito{
     font-size: 22px;
-    margin-top: 5px;
-    margin-right: 20px;
     cursor: pointer;
+    padding: 4px;
+    top: 15px;
+    right: 15px;
+    position: absolute;
 }
+
 
 /* Hero image */
 
@@ -154,31 +177,6 @@ button:active {
     }
 }
 
-/* Footer redes videos y contacto */
-.redes {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(245, 241, 242, 0.995);
-}
-
-.redes img {
-    width: 75px;
-    height: 75px;
-}
-
-.videos {
-    width: 200px;
-    height: 200px;
-}
-
-.redes p {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: inherit;
-    font-size: 20px;
-}
-
 /* TIENDA CARDS */
 .shop-content {
 display: flex;
@@ -265,4 +263,11 @@ width: 100%;
 }
 .delete-product {
     cursor:pointer;
+}
+
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
 }

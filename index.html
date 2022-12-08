@@ -15,7 +15,7 @@
 
     <header>
 
-                                                        <!-- NAVBAR -->
+        <!-- NAVBAR -->
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -29,13 +29,15 @@
                         <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link" href="#tienda">Tienda</a>
                         <a class="nav-link" href="#contacto">Contacto</a>
-                        <p class="ver-carrito" id="verCarrito">🛒</p>
+                        <a href="https://www.instagram.com/professional.dent.repair.miami/" target="_blank"> <img class="instagram" src="./img/instagram.png" alt="logo ig"></a>
+                        <p class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito">
+                            </span></p>
                     </div>
                 </div>
             </div>
         </nav>
 
-                                                        <!-- HERO IMAGE -->
+        <!-- HERO IMAGE -->
 
         <section class="hero">
 
@@ -58,11 +60,11 @@
             <p>Echa un vistazo a nuestros productos</p>
         </div>
 
-                                                        <!-- TIENDA  -->
-        
+        <!-- TIENDA  -->
+
         <div id="shopContent" class="shop-content"></div>
 
-                                                        <!-- MODAL -->
+        <!-- MODAL -->
 
         <div id="modalContainer" class="modal-container"></div>
     </main>
@@ -74,7 +76,7 @@
             <p>Trabajemos juntos</p>
         </div>
 
-                                                    <!-- FORMULARIO-->
+        <!-- FORMULARIO-->
 
         <div class="formYmapa container">
 
@@ -120,7 +122,7 @@
                 </div>
             </form>
 
-                                                <!-- MAPA GOOGLE-->
+            <!-- MAPA GOOGLE-->
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.1649923324317!2d-58.24427124878447!3d-34.75143637274079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ee6a2e67aab%3A0xa100ac1ff7e10f2e!2sCaracas%204840%2C%20Ezpeleta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1669746628783!5m2!1ses-419!2sar"
@@ -129,20 +131,68 @@
 
         </div>
 
-            <!-- CONTAINER DATOS DE CONTACTO -->
+        <!-- FOOTER VIDEOS -->
+        <div class="container my-5">
 
-        <div class="redes container">
-            <video class="videos" src="./img/bollo.mp4" autoplay muted loop></video>
+            <div class="text-center text-white" style="background-color: #caced1;">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!-- Section: Images -->
+                    <section class="">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                    data-ripple-color="light">
+                                    <video class="w-100" src="./img/bollo.mp4" autoplay loop muted></video>
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                    data-ripple-color="light">
+                                    <video class="w-100" src="./img/astonpulido.mp4" autoplay loop muted> </video>
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                    data-ripple-color="light">
+                                    <video class="w-100" src="./img/teslabollo.mp4" autoplay muted loop></video>
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                    data-ripple-color="light">
+                                    <video class="w-100" src="./img/pulido.mp4" muted loop autoplay> </video>
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Images -->
+                </div>
+                <!-- Grid container -->
 
-            <p>Contáctenos:</p>
-            <p>(011) 4089-3890</p>
-            <p>sacabollosquilmes@gmail.com</p>
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://www.instagram.com/professional.dent.repair.miami/">Sacabollos Quilmes</a>
+                </div>
+                <!-- Copyright -->
+            </div>
 
-            <a href="https://www.instagram.com/professional.dent.repair.miami/"><img src="./img/instagram.png"
-                    alt="Instagram"></a>
-
-            <video class="videos" src="./img/pulido.mp4" autoplay muted loop></video>
         </div>
+        <!-- End of .container -->
+
     </footer>
 
 
@@ -151,9 +201,9 @@
         crossorigin="anonymous"></script>
 
 
-        <script src="products.js"></script>
-        <script src="index.js"></script>
-        <script src="carrito.js"></script>
+    <script src="products.js"></script>
+    <script src="index.js"></script>
+    <script src="carrito.js"></script>
 </body>
 
 </html>
