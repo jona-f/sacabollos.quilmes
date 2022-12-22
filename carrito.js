@@ -1,3 +1,5 @@
+/* CARRITO */
+
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
@@ -34,6 +36,8 @@ const pintarCarrito = () => {
 
         modalContainer.append(carritoContent);
 
+/* RESTAR CARRITO */
+
         let restar = carritoContent.querySelector(".restar");
 
         restar.addEventListener("click", () => {
@@ -44,6 +48,8 @@ const pintarCarrito = () => {
             pintarCarrito();
         });
 
+/* SUMAR CARRITO */
+
         let sumar = carritoContent.querySelector(".sumar");
 
         sumar.addEventListener("click", () => {
@@ -51,6 +57,8 @@ const pintarCarrito = () => {
             saveLocal();
             pintarCarrito();
         });
+
+/* ELIMINAR PRODUCTO */
 
         let eliminar = document.createElement("span");
 
@@ -89,6 +97,8 @@ const carritoCounter = () => {
     cantidadCarrito.style.display = "block";
 
     const carritoLength = carrito.length;
+
+/* LOCAL STORAGE */
 
     localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));

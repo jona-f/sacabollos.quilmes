@@ -9,6 +9,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Sacabollos Quilmes</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('oY9u1xvP0gw5U96da')
+</script>
 </head>
 
 <body>
@@ -29,7 +35,8 @@
                         <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link" href="#tienda">Tienda</a>
                         <a class="nav-link" href="#contacto">Contacto</a>
-                        <a href="https://www.instagram.com/professional.dent.repair.miami/" target="_blank"> <img class="instagram" src="./img/instagram.png" alt="logo ig"></a>
+                        <a href="https://www.instagram.com/professional.dent.repair.miami/" target="_blank"> <img
+                                class="instagram" src="./img/instagram.png" alt="logo ig"></a>
                         <p class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito">
                             </span></p>
                     </div>
@@ -80,23 +87,32 @@
 
         <div class="formYmapa container">
 
-            <form class="col-md-7">
-                <div class="col-md-4">
-                    <label class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="..." required>
+            <!--<form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" name="from_name" id="from_name">
                 </div>
-                <div class="col-md-4">
-                    <label class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="..." required>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" id="message">
                 </div>
-                <div class="col-md-4">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                <div class="field">
+                    <label for="email_id">Email</label>
+                    <input type="text" name="email_id" id="email_id">
                 </div>
-                <div class="col-md-3">
-                    <label class="form-label">Consulta</label>
-                    <select class="form-select" id="validationCustom04" required>
+
+                <input class="button" type="submit" id="button" value="Enviar Email">
+            </form>-->
+
+
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" class="form-control" id="from_name" name="from_name">
+                </div>
+                <div class="field">
+                    <label>Consulta</label>
+                    <select class="form-select form-control" id="validationCustom04" required>
                         <option selected disabled value="">Sobre</option>
                         <option>Sacabollos</option>
                         <option>Tratamiento Ceramico</option>
@@ -105,21 +121,16 @@
                         <option>Productos de la tienda</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <button>
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                        <span>Enviar</span>
-                    </button>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" id="message">
                 </div>
+                <div class="field">
+                    <label for="email_id">Email</label>
+                    <input type="text" name="email_id" id="email_id">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                </div>
+                <input class="button" type="submit" id="button" value="Enviar Email">
             </form>
 
             <!-- MAPA GOOGLE-->
@@ -185,11 +196,14 @@
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2022 Copyright:
-                    <a class="text-white" href="https://www.instagram.com/professional.dent.repair.miami/">Sacabollos Quilmes</a>
+                    <a class="text-white" href="https://www.instagram.com/professional.dent.repair.miami/">Sacabollos
+                        Quilmes</a>
                 </div>
                 <!-- Copyright -->
             </div>
 
+            <!-- API NASA PARA ENTREGA N*4 -->
+            <div id="infoNasa"></div>
         </div>
         <!-- End of .container -->
 

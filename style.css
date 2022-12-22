@@ -23,7 +23,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.instagram{
+.instagram {
     width: 35px;
     height: 35px;
     top: 15px;
@@ -42,7 +42,7 @@
     display: none;
 }
 
-.ver-carrito{
+.ver-carrito {
     font-size: 22px;
     cursor: pointer;
     padding: 4px;
@@ -123,79 +123,52 @@ body {
     margin-top: 10px;
 }
 
-button {
-    font-family: inherit;
-    font-size: 20px;
-    background: royalblue;
-    color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-    margin-top: 2px;
+.field {
+    margin-bottom: 10px;
 }
 
-button span {
+.field label {
     display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+    color: #777;
 }
 
-button svg {
+.field input {
     display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
-button:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
 }
 
-button:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-}
-
-button:hover span {
-    transform: translateX(5em);
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-@keyframes fly-1 {
-    from {
-        transform: translateY(0.1em);
-    }
-
-    to {
-        transform: translateY(-0.1em);
-    }
-}
 
 /* TIENDA CARDS */
 .shop-content {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-top: 30px;
-margin-left: 80px;
-margin-right: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: serif;
 }
 
-.card > img {
+.card>img {
     width: 90%;
     height: 250px;
 }
@@ -216,32 +189,34 @@ margin-right: 80px;
     flex-direction: column;
     align-items: center;
     /*for the top*/
-position: fixed;
-overflow: auto;
-z-index: 9;
-top: 12vh;
-scrollbar-color: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
 }
+
 .modal-container ::-webkit-scrollbar {
     display: none;
 }
 
 .modal-header {
-display: flex;
-justify-content: space-around;
-background-color: #0a0909;
-color: #fff;
-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
 }
 
 .modal-header-title {
     justify-self: start;
 }
+
 .modal-header-button {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.modal-container > .modal-content {
+.modal-container>.modal-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -250,7 +225,7 @@ width: 100%;
     margin: 10px;
 }
 
-.modal-container > div > img {
+.modal-container>div>img {
     height: 120px;
     width: 120px;
 }
@@ -261,13 +236,15 @@ width: 100%;
     text-align: center;
     padding-top: 20px;
 }
-.delete-product {
-    cursor:pointer;
-}
 
-.sumar{
+.delete-product {
     cursor: pointer;
 }
-.restar{
+
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
     cursor: pointer;
 }

@@ -1,3 +1,5 @@
+/* PRODUCTOS-CARDS */
+
 const productos = [
     {
         id: 1,
