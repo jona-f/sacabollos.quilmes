@@ -75,23 +75,3 @@ document.getElementById('form')
         alert(JSON.stringify(err));
     });
 });
-
-// Api NASA Para entrega N*4
-
-let infoNasa = document.querySelector("#infoNasa");
-
-const fetchNasa = async () => {
-    const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=imNwSQqf3Fur6wJRHDjfZI3F9ruHEuERIIUutc3u");
-    const data = await response.json();
-    console.log(data);
-
-    const spaceInfo = document.createElement("div");
-    spaceInfo.innerHTML = `
-    <img src="${data.url}"></img>
-    <h4>${data.title}</h4>
-    <p>${data.explanation}</p>
-    `;
-    infoNasa.append(spaceInfo);
-};
-
-fetchNasa();

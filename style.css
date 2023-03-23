@@ -8,19 +8,21 @@
     font-size: 90px;
     justify-content: center;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
 }
 
 .titulos p {
     font-size: 40px;
     justify-content: center;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
 }
 
 .navbar-nav a {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-family: 'Verdana';
+    margin: 2px;
+    
 }
 
 .instagram {
@@ -28,6 +30,44 @@
     height: 35px;
     top: 15px;
 }
+
+.whatsapp {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+}
+
+.texto p {
+    font-size: 25px;
+    font-family: Verdana;
+}
+
+.redes a {
+    margin-left: 150px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+@media (max-width:769px) {
+    .redes a {
+        margin-left: 100px;
+        align-items: center;
+    }
+}
+
+.mapa {
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 1200px) {
+    .mapa {
+        justify-content: center;
+        height: 300px;
+    }
+}
+
 
 /* Carrito Contador */
 .cantidad-carrito {
@@ -63,6 +103,9 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero::before {
@@ -81,42 +124,42 @@ body {
 
 .hero-content {
     position: relative;
-}
-
-.hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content {
-    position: relative;
-    font-family: "Monserrat", sans-serif;
+    font-family: 'Courier New';
     color: white;
     text-align: center;
-    margin: 0.625rem;
 }
 
-.hero-title {
-    font-size: 3rem;
-    font-weight: 600;
+.hero-content h1 {
+    font-size: 90px;
     margin-bottom: 0;
 }
 
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
+.hero-content h1:hover {
+    font-size: 110px;
+    color: darkred;
+}
+
+.hero-content p {
+    font-size: 40px;
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 550px) {
+    .hero-content {
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+    }
+}
 
-/* footer formulario y mapa */
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
 
+/* formulario comentado 
 
-.formYmapa {
+.form {
     display: flex;
     justify-content: space-around;
     padding: 3px;
@@ -149,6 +192,7 @@ input[type="submit"] {
     border: none
 }
 
+*/
 
 /* TIENDA CARDS */
 .shop-content {
@@ -179,6 +223,7 @@ input[type="submit"] {
 }
 
 /* modal container */
+
 .modal-container {
     width: 80%;
     margin: 0 10%;
@@ -248,3 +293,5 @@ input[type="submit"] {
 .restar {
     cursor: pointer;
 }
+
+/* fin modal container */
