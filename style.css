@@ -157,7 +157,7 @@ body {
     width: 100%;
 }
 
-/* formulario comentado 
+/* formulario */
 
 .form {
     display: flex;
@@ -192,7 +192,6 @@ input[type="submit"] {
     border: none
 }
 
-*/
 
 /* TIENDA CARDS */
 .shop-content {
